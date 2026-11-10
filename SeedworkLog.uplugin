@@ -1,0 +1,24 @@
+{
+    "FileVersion": 3,
+    "Version": 1,
+    "VersionName": "1.0",
+    "FriendlyName": "SeedworkLog",
+    "Description": "Seedwork for logging",
+    "Category": "Other",
+    "CreatedBy": "Mistfly games",
+    "CreatedByURL": "",
+    "DocsURL": "",
+    "MarketplaceURL": "",
+    "SupportURL": "",
+    "CanContainContent": true,
+    "IsBetaVersion": false,
+    "IsExperimentalVersion": false,
+    "Installed": false,
+    "Modules": [
+        {
+            "Name": "SeedworkLog",
+            "Type": "Runtime",
+            "LoadingPhase": "Default"
+        }
+    ]
+}
