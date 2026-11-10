@@ -106,15 +106,25 @@ void FSeedworkLogModule::ShutdownModule()
 
 void FSeedworkLogModule::RegisterCategory(const FLogCategoryBase& category)
 {
+    RegisterCategoryName(category.GetCategoryName());
+}
+
+void FSeedworkLogModule::RegisterCategoryName(FName categoryName)
+{
 #if !NO_LOGGING
-    SeedLog->RegisterCategory(category.GetCategoryName());
+    SeedLog->RegisterCategory(categoryName);
 #endif
 }
 
 void FSeedworkLogModule::UnregisterCategory(const FLogCategoryBase& category)
 {
+    UnregisterCategoryName(category.GetCategoryName());
+}
+
+void FSeedworkLogModule::UnregisterCategoryName(FName categoryName)
+{
 #if !NO_LOGGING
-    SeedLog->UnregisterCategory(category.GetCategoryName());
+    SeedLog->UnregisterCategory(categoryName);
 #endif
 }
 

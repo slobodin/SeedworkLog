@@ -16,7 +16,10 @@ public:
 
     /** Registered categories show warnings on screen and errors in the PIE Message Log. */
     void RegisterCategory(const FLogCategoryBase& category);
+    void RegisterCategoryName(FName categoryName);
+
     void UnregisterCategory(const FLogCategoryBase& category);
+    void UnregisterCategoryName(FName categoryName);
 
 private:
 #if !NO_LOGGING
